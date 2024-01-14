@@ -29,6 +29,19 @@ And we have obtained the following results on the test set:
 
 ## Task2 work
 
+This week we have explored the same classification problem as the previous week, but now using a MLP in different ways: A classifier and a feature extractor.
+#### Approach 1:
+
+#### Approach 2:
+
+#### Approach 3: MLP embeddings + BoVW + SVM
+First we have trained a MLP model to classify random patches of the original MIT_split dataset -> 0.4857 accuracy score on test set
+Then, divide dataset images into patches, computed the embeddings using the trained network, created a BoVW, and then trained an SVM model:
+
+| MLP                    | K (Codebook)  | Acc (Training)  	| Acc (Test)   |
+|------------------------|---------------|------------------|--------------|
+| 2 layers (1024, 2048)  | 64            | 0.7602          	| 0.6245       |
+
 ## Task3 work
 
 ## Task4 work
