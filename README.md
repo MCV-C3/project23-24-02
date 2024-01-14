@@ -40,11 +40,11 @@ The MLP network trained is used as a feature extractor, and the embeddings of th
 First we have trained a MLP model to classify random patches of the original MIT_split dataset -> 0.4857 accuracy score on test set
 Then, divide dataset images into patches, computed the embeddings using the trained network, created a BoVW, and then trained an SVM model:
 
-| MLP                    | K (Codebook)  | Acc (Training)  	| Acc (Test)   |
-|------------------------|---------------|------------------|--------------|
-| 3 layers (64, 128, 64)  | -            | 0.6871          	| 0.4803       |
-| 4 layers (512, 512, 512, 512)  | -            | 0.4583          	| 0.4002       |
-| 2 layers (1024, 2048)  | 64            | 0.7602          	| 0.6245       |
+| Approach   | MLP                           | K (Codebook) | Acc (Training)  	| Acc (Test)   |
+|------------|-------------------------------|--------------|-------------------|--------------|
+| Approach 1 | 3 layers (64, 128, 64)        | -            | 0.6871          	| 0.4821       |
+| Approach 2 | 4 layers (512, 512, 512, 512) | -            | 0.4583          	| 0.4002       |
+| Approach 3 | 2 layers (1024, 2048)         | 64           | 0.7602          	| 0.6245       |
 
 ## Task3 work
 
