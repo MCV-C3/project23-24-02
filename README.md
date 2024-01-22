@@ -48,5 +48,13 @@ Then, divide dataset images into patches, computed the embeddings using the trai
 
 ## Task3 work
 
+This week we have worked with a pretrained ResNet50 model to solve the classification problem in an n-to-n way. Since this model 
+can easily achieve near-perfect score on our data, the goal is to fine-tune the model using only 40 samples per class.
+
+To this end, we explore the effect of a variety of things, from data augmentation techniques to all the different hyperparameters that
+can be set and changed. Also, we look into the topology of the network by introducing drop-out and batch normalization layers,
+as well as regularizing the weights with penalties to the loss. Finally, we train the model while unfreezing more and more
+layers, and finish the experiments with an ablation studiy on the size of the architecture by directly removing entire blocks.
+
 ## Task4 work
 
