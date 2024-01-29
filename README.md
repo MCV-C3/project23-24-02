@@ -58,3 +58,17 @@ layers, and finish the experiments with an ablation studiy on the size of the ar
 
 ## Task4 work
 
+Train a CNN model from scratch using the reduced dataset MIT_small_train_1 (400 training images, 8 labels). 
+
+* MODEL 1: 880 weights, 65.22% accuracy.
+* MODEL 2: 19848 weights, 77.80% accuracy.
+
+| Model      | Performance ratio (*)  | Distance (**) | 
+|------------|------------------------|---------------|
+| MODEL 1    | 0.7411                 | 0.9462        |
+| MODEL 2    | 0.3920                 | 19.8492       |
+
+(*) Performance ratio is accuracy/(number of weights/100000).
+(**) Distance to the top left corner of the plot.
+
+Model 1 is preferred since it has the higher performance ratio, leading to the lowest distance. 
